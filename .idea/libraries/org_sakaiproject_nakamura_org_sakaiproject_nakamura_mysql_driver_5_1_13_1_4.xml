@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="org.sakaiproject.nakamura:org.sakaiproject.nakamura.mysql-driver:5.1.13-1.4" type="repository">
+    <properties maven-id="org.sakaiproject.nakamura:org.sakaiproject.nakamura.mysql-driver:5.1.13-1.4" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/org.sakaiproject.nakamura.mysql-driver-5.1.13-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.apache.felix.scr.annotations-1.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.sakaiproject.nakamura.core-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/servlet-api-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-pool-1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-osgi-9.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.5.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mockito-all-1.8.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/annotations-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
