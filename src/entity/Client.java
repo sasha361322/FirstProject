@@ -9,7 +9,6 @@ public class Client {
     private String PatronymicName;
     private Date Birthday;
     private int AccountNumber;
-    public Client(){}
     public int getId() {
         return Id;
     }
@@ -45,6 +44,18 @@ public class Client {
     }
     public void setAccountNumber(int accountNumber) {
         AccountNumber = accountNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "Id=" + Id +
+                ", Sirname='" + Sirname + '\'' +
+                ", Name='" + Name + '\'' +
+                ", PatronymicName='" + PatronymicName + '\'' +
+                ", Birthday=" + Birthday +
+                ", AccountNumber=" + AccountNumber +
+                '}';
     }
 }
 

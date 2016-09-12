@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
+import service.ClientService;
 
 import java.util.List;
 
@@ -31,18 +32,14 @@ public class Main {
         return ourSessionFactory.openSession();
     }
 
-    private List<Client> listProfession() {
-        Session session = getSession();
-        session.beginTransaction();
-        List<Client> result = session.createQuery("from Client").list();
-        session.getTransaction().commit();
-        return result;
-    }
+
     public static void main(final String[] args) throws Exception {
-        Main main = new Main();
-        List<Client> clients = main.listProfession();
+        ClientService clientService = new ClientService();
+        clientService.setSessionFactory(ourSessionFactory);
+        List<Client> clients = clientService.listProfession();
         for (Client client:clients){
-            System.out.println(client.getName());
+            System.out.println(client+"\n\n");
         }
+        System.out.println("\n\n\n\n"+clientService.getClientById(1).getBirthday());
     }
 }
