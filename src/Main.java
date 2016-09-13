@@ -1,11 +1,11 @@
-import entity.Client;
+import client.model.Client;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
-import service.ClientService;
+import client.service.ClientService;
 
 import java.util.List;
 

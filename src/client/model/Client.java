@@ -1,10 +1,14 @@
-package entity;
+package client.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Client {
+public class Client implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     private int Id;
-    private String Sirname;
+    private String Surname;
     private String Name;
     private String PatronymicName;
     private Date Birthday;
@@ -15,11 +19,11 @@ public class Client {
     public void setId(int id) {
         Id = id;
     }
-    public String getSirname() {
-        return Sirname;
+    public String getSurname() {
+        return Surname;
     }
-    public void setSirname(String sirname) {
-        Sirname = sirname;
+    public void setSurname(String surname) {
+        Surname = surname;
     }
     public String getName() {
         return Name;
@@ -50,7 +54,7 @@ public class Client {
     public String toString() {
         return "Client{" +
                 "Id=" + Id +
-                ", Sirname='" + Sirname + '\'' +
+                ", Sirname='" + Surname + '\'' +
                 ", Name='" + Name + '\'' +
                 ", PatronymicName='" + PatronymicName + '\'' +
                 ", Birthday=" + Birthday +
