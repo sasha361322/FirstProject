@@ -38,9 +38,9 @@ public class ClientService {
     }
     public Client getClientById(int id){
         Session session=this.sessionFactory.openSession();
-//        session.beginTransaction();
+        session.beginTransaction();
         Client client=(Client)session.load(Client.class, id);
-//        session.getTransaction().commit();
+        session.getTransaction().commit();
         return client;
     }
     public List<Client> listProfession() {
