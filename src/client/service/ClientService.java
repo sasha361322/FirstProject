@@ -43,7 +43,7 @@ public class ClientService {
         session.getTransaction().commit();
         return client;
     }
-    public List<Client> listProfession() {
+    public List<Client> listClients() {
         Session session = this.sessionFactory.openSession();
         session.beginTransaction();
         List<Client> result = session.createQuery("from Client").list();
